@@ -23,32 +23,43 @@
     	<aside>
     		<form>
 
-    			<div class="flex">
+    			<div class="flex form">
     				<input  class="cardnr" type="text" name="cardnr" placeholder="XXXX XXXX XXXX XXXX">
     				<input class="expiry" type="tel" placeholder="MM / YY" maxlength="7" x-autocompletetype="cc-exp" autocompletetype="cc-exp" autocorrect="off" spellcheck="off" autocapitalize="off">
     			</div>
-    			<div class="flex">
+    			<div>
+    				<div class="line l1"></div>
+    				<div class="line"></div>
+    			</div>
+    			<div class="flex form">
     				<input class="name" type="text" name="name" placeholder="JOHN DOE" autocapitalize="on">
     				<input  class="cvc" type="number" name="CVC" placeholder="555">
+    			</div>
+    			<div>
+    				<div class="line"></div>
+    				<div class="line"></div>
     			</div>
     		</form>
     	</aside>
     	<main>
-    		<div class="flex">
+    		<div class="flex product">
     			<h2>Product 1</h2>
-    			<h2>10€</h2>
+    			<h2 class="margin">10€</h2>
     		</div>
-    		<div class="flex">
+    		<div class="flex product">
     			<h2>Product 2</h2>
-    			<h2>20€</h2>
+    			<h2 class="margin">20€</h2>
     		</div>
-    		<div class="flex">
+    		<div class="flex product">
     			<h3>Total</h3>
-    			<h1>30€</h1>
+    			<h1 class="margin">30€</h1>
     		</div>
     	</main>
     	<footer>
-
+    		<div>
+    			<h1>Continue</h1>
+    		</div>
+    		<h3>></h3>
     	</footer>
     </body>
 </html>

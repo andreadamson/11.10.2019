@@ -8,6 +8,8 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	color: #263238;
 	background:#C2C2C2;
+	display: flex;
+	flex-direction: column;
 }
 
 .flex {
@@ -20,6 +22,8 @@ header {
 	width:100%;
 	position: relative;
 	border-bottom-left-radius:150px;
+	margin-bottom:-150px;
+	z-index: 4;
 }
 
 header h1 {
@@ -31,4 +35,41 @@ header h1 {
 	justify-content: space-between;
 	margin: 0 50px;
 	font-size: 30px;
+}
+
+aside {
+	height: 500px;
+	width:100%;
+	padding-top: 150px;
+	border-bottom-left-radius:150px;
+	background: rgb(17,224,71);
+	background: linear-gradient(142deg, rgba(17,224,71,1) 0%, rgba(19,170,200,1) 41%, rgba(6,184,219,1) 79%);
+	margin-bottom:-150px;
+	z-index: 3;
+}
+
+input {
+	position: relative;
+	top:50px;
+	margin-left: 5%;
+}
+
+.cardnr {
+	width:60%;
+}
+
+.expiry {
+	width:20%;
+	margin-right: 5%;
+}
+
+
+
+main {
+	height:500px;
+	position: relative;
+	background: black;
+	padding-top: 150px;
+	z-index:-1;
+	flex-grow: 2;
 }
